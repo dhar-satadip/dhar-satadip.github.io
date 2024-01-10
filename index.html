@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+      <meta charset="utf-8">
+      <title>Kodomo Shokudou</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+      <link rel="stylesheet" href="KS.css">
+  </head>
+
+  <body>
+      <div class="page" id="pageTop">
+          <header id="header">
+              <div class="headerNavWrap">
+                  <div class="header__logoWrap">
+                      <div class="header__logo">
+                          <h1>
+                              <a href="index.html">
+                                  <img src="images/SUN_logo.png" alt="SUN Co., Ltd">
+                              </a>
+                          </h1>
+                      </div>
+                  </div>
+              </div>
+          </header> 
+
+      <section class="ks_body">
+        <div class="content top_content">
+          <div class="image-container">
+            <img src="images/gallery/IMG_9402.jpg" alt="image">
+            <div class="overlay-text">Kodomo Shokudou is a voluntary act. We, SUN Co., Ltd aim to build a community through this movement</div>
+            <button onclick='{scrollTOSection("ksBySUN")}' class="img-btn">Learn More</button>
+          </div>
+          <div class="cont_blank"></div>
+        </div>
+        <div>
+          <div class="content">
+              <div class="cont_text">
+                <h1 style="text-align: center; color: #DE5A18;">UPCOMING SESSION</h1>
+                <h3 style="text-align: center;">January 2nd, 2024<br>
+                  13:00 JPT<br>
+                Tokyo Head Office</h3>
+                <p style="font-size: 20px;">
+                  Our Next こども食堂!
+                  <br>We are cordially inviting you and your children to this event
+                </p>
+                <button onclick='{scrollTOSection("past-sessions")}'>Past Sessions</button>
+              </div>
+          </div>
+
+          <div class="content" id="ksBySUN">
+            <div class="cont_text">
+              <h1 style="text-align: center; color: #DE5A18;">ABOUT こども食堂 BY SUN</h1>
+              <p style="font-size: 20px;">
+                こども食堂 By SUN, is a place where children & their struggling single parents can have meals at no cost.</p>
+                <div class="slideshow-container">
+                  <div class="slideshow fade">
+                    <img src="images/gallery/IMG_9380.jpg" style="width:100%">
+                  </div>
+                  
+                  <div class="slideshow fade">
+                    <img src="images/gallery/IMG_9386.jpg" style="width:100%">
+                  </div>
+                  
+                  <div class="slideshow fade">
+                    <img src="images/gallery/IMG_9423.jpg" style="width:100%">
+                  </div>
+
+                  <div class="slideshow fade">
+                    <img src="images/gallery/IMG_9422.jpg" style="width:100%">
+                  </div>
+                </div>
+              <p style="font-size: 20px;">
+                We want build a community where they can feel safe & have a good time interacting with other members.<br>
+                Let’s create a wonderful environment for them
+              </p>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="cont_text">
+              <h1 style="text-align: center; color: #DE5A18;">PHOTO GALLERY</h1>
+              <div>
+                <div class="slideImages">
+                  <img src="images/gallery/IMG_9411.jpg" style="width:100%">
+                </div>
+              
+                <div class="slideImages">
+                  <img src="images/gallery/IMG_9394.jpg" style="width:100%">
+                </div>
+              
+                <div class="slideImages">
+                  <img src="images/gallery/IMG_9387.jpg" style="width:100%">
+                </div>
+                  
+                <div class="slideImages">
+                  <img src="images/gallery/IMG_9391.jpg" style="width:100%">
+                </div>
+              
+                <div class="slideImages">
+                  <img src="images/gallery/IMG_9407.jpg" style="width:100%">
+                </div>
+                  
+                <div class="slideImages">
+                  <img src="images/gallery/IMG_9402.jpg" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="scroll-container">
+                  <div class="column">
+                    <img class="gallery cursor" src="images/gallery/IMG_9411.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                  </div>
+                  <div class="column">
+                    <img class="gallery cursor" src="images/gallery/IMG_9394.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                  </div>
+                  <div class="column">
+                    <img class="gallery cursor" src="images/gallery/IMG_9387.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                  </div>
+                  <div class="column">
+                    <img class="gallery cursor" src="images/gallery/IMG_9391.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                  </div>
+                  <div class="column">
+                    <img class="gallery cursor" src="images/gallery/IMG_9407.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                  </div>    
+                  <div class="column">
+                    <img class="gallery cursor" src="images/gallery/IMG_9402.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+
+          <div class="content" id="past-sessions">
+            <div class="cont_text">
+              <h1 style="text-align: center; color: #DE5A18;">PAST SESSIONS</h1>
+              <div class="past-sessions">
+                <h3>DD-MM-YYYY<br>
+                  13:00 JPT<br>
+                Tokyo Head Office</h3>
+              </div>
+              <div class="past-sessions">
+                <h3>DD-MM-YYYY<br>
+                  13:00 JPT<br>
+                  Nagoya Office</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer">
+          <!-- <p class="p_mark"><img style="width:100px; height:100px;" src="" alt="Privacy"></p> -->
+          <div>
+            <p>Copyright &copy; SUN Co., Ltd All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+      </div>
+  <script>
+    //scroll to view
+    function scrollTOSection(elementId){
+      let element = document.getElementById(elementId);
+      element.scrollIntoView();
+    }
+
+    //SlideShow animation
+    let idx = 0;
+    showSldShw();
+    
+    function showSldShw() {
+      let i;
+      let slides = document.getElementsByClassName("slideshow");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      idx++;
+      if (idx > slides.length) {idx = 1}    
+      slides[idx-1].style.display = "block";  
+      setTimeout(showSldShw, 4000);
+    }
+
+    //Photo Gallery
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("slideImages");
+      let dots = document.getElementsByClassName("gallery");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+  </body>
+</html>
